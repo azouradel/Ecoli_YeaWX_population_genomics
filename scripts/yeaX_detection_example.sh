@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Example TBLASTN command for YeaX detection
+# Example TBLASTN workflow for YeaX detection
 
 tblastn \
 -query YeaX_ref.faa \
--db ecoli_9700_db \
+-subject example_genomes.fna \
 -task tblastn-fast \
 -evalue 1e-20 \
 -outfmt "6 qseqid sseqid pident length qcovhsp evalue bitscore" \
